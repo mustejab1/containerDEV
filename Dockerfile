@@ -16,4 +16,4 @@ COPY views /usr/src/views
 USER nobody
 # Expose the application port and run application
 EXPOSE 5000
-CMD [“node”,”app.js”]
+CMD [“node”,”server.js”]
