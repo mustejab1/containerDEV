@@ -7,9 +7,9 @@ COPY package.json /usr/src/package.json
 # Install app dependencies
 RUN npm install
 # Bundle app source and tests
-COPY app.js /usr/src/
+COPY server.js /usr/src/
 COPY test /usr/src/test
-COPY script /usr/src/script
+COPY lib /usr/src/lib
 # user to non-privileged user
 USER nobody
 # Expose the application port and run application
