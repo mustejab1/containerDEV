@@ -10,6 +10,8 @@ RUN npm install
 COPY server.js /usr/src/
 COPY test /usr/src/test
 COPY lib /usr/src/lib
+COPY vendor /usr/src/vendor
+COPY views /usr/src/views
 # user to non-privileged user
 USER nobody
 # Expose the application port and run application
